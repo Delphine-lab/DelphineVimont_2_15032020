@@ -1,0 +1,233 @@
+/* Définition de la police Raleway */
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Ralewayfont/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('Ralewayfont/Raleway-VariableFont_wght.ttf');
+    src: url('Ralewayfont/static/Raleway-Black.ttf');
+    src: url('Ralewayfont/static/Raleway-BlackItalic.ttf');
+    src: url('Ralewayfont/static/Raleway-Medium.ttf');
+    src: url('Ralewayfont/static/Raleway-Regular.ttf');
+    src: url('Ralewayfont/static/Raleway-Thin.ttf');
+    src: url('Ralewayfont/static/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    width: 900px;
+    margin: auto;
+    font-family: Raleway-Regular, Serif;
+    font-weight: normal;
+}
+
+/* HEADER */
+
+header
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; 
+
+}
+
+/* 1 Logo */
+
+#logo
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 120px;
+    height: 60px;
+}
+
+/* 2 Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+    font-size: small;
+   
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-size: 1.3em;
+    color:#0065FC;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: grey;  
+}
+
+/* 3 Texte*/
+
+#Title
+{
+display: flex;
+flex-direction: column;
+}
+
+header h2
+{
+    font-family: 'Raleway-Bold', serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+    padding-top: 1em;
+   
+}
+
+header h3
+
+{
+        font-family: 'Raleway-Regular', serif;
+        font-size: 1em;
+        font-weight: normal;
+        margin: 0 0 0 10px;
+        padding-top: 0.5em;
+}
+
+/* 4 Recherche*/
+
+#Rechercher
+{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#Rechercher img
+{
+    width: 60px;
+    height: 30px;
+    padding-top: 2em;
+   
+}
+
+.bouton_bleu
+{
+    height: 25px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 5px;
+    font-family: Raleway-medium;
+    font-size: 1em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+/* 5 Filtres*/
+
+#filtres
+{
+   
+}
+
+
+#Filtres a:active
+{
+    color: purple;
+}
+
+#Economique img 
+{
+    width: 30px;
+    height: 15px;
+   
+}
+
+#Economique 
+{
+    list-style-type: none;
+    font-size: small;
+    
+} 
+
+#Familial img
+{
+    width: 30px;
+    height: 15px;
+   
+}
+
+#Familial
+{
+    list-style-type: none;
+    font-size: small;
+    
+} 
+
+#Romantique img
+{
+    width: 30px;
+    height: 15px;
+}
+
+#Romantique
+{
+    list-style-type: none;
+    font-size: small;
+}
+
+#Animaux img
+{
+    width: 30px;
+    height: 15px;
+}
+
+#Animaux
+{
+    list-style-type: none;
+    font-size: small;
+}
+
+/* 6 Informations*/
+
+#Info img
+{
+    width: 30px;
+    height: 15px; 
+}
+ 
+#Info
+{
+    font-family: 'Raleway-Thin';
+    font-size: 0.5em;
+}
+
+/* SECTION HEBERGEMENTS */
+
+/* ASIDE LES PLUS POPULAIRES*/
+
+/* SECTION ACTIVITES */
+
+/* FOOTER*/
+
+
+
+
+
+
+
