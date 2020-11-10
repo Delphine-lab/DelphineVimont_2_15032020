@@ -16,22 +16,17 @@
 
 /* Eléments principaux de la page */
 
-body
-{
-    width: 900px;
-    margin: auto;
+body{
     font-family: Raleway-Regular, Serif;
-    font-weight: normal;
+    
 }
 
 /* HEADER */
 
-header
-{
+header {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between; 
-
 }
 
 /* 1 Logo */
@@ -56,8 +51,7 @@ nav ul
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    font-size: small;
-   
+    font-size: small;  
 }
 
 nav li
@@ -123,28 +117,18 @@ header h3
     padding-top: 2em;
    
 }
-
-.bouton_bleu
-{
-    height: 25px;
-    background: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 5px;
-    font-family: Raleway-medium;
-    font-size: 1em;
-    text-align: center;
-    padding: 3px 8px 0px 8px;
-    color: white;
-    text-decoration: none;
-}
-
+ 
 /* 5 Filtres*/
+
+#filtres ul
+{
+   display: flex; 
+}
 
 #filtres
 {
-   
+    display: flex;
 }
-
 
 #Filtres a:active
 {
@@ -218,6 +202,52 @@ header h3
 }
 
 /* SECTION HEBERGEMENTS */
+
+#hebergements {
+    width: 600px;
+    height: 500px;
+    background-color: grey;
+    margin: 10px;
+}
+
+.title-hosting {
+    width: auto;
+    font-size: 15px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    display: inline;
+}
+
+#flexbox-hosting {
+    display: flex;
+    justify-content: space-between;      
+}
+
+#cannebiere, #port, #mouettes, #mer, #panier, #amina {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;  
+}
+
+.smaller-image {
+    width: 160px;
+    align-items: center;
+}
+
+.text-hosting {
+    font-size: 8px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+#etoilage {
+    width: 0.5px;
+    display: flex;
+}
 
 /* ASIDE LES PLUS POPULAIRES*/
 

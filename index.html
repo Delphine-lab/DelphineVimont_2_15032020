@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,21 +21,23 @@
                 <li><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
+    </header>
 
-        <div id="Title">
+    <section id="search">
+        <div id="title">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <h3>En plein centre ville ou en pleine nature</h3>
         </div>
 
         <div id="Rechercher">
-            <form method="post" action="traitement.php">
-                <img src="Icons/map-marker-alt-solid.svg" alt"Icon Map" /> <textarea name="Rechercher"
-                    id="rechercher"></textarea>
-                <a href="#" class="bouton_bleu">Rechercher </a>
+            <form action="https://reservia.com/destinations">
+                <img src="Icons/map-marker-alt-solid.svg" alt"Icon Map" />
+                <input type="text" placeholder="#" value="#">
+                <button type="submit"> Rechercher</button>
             </form>
         </div>
 
-        <div id="Filtres">
+        <div id="filtres">
 
             <h4>Filtres</h4>
             <ul>
@@ -57,28 +61,103 @@
         </div>
 
         <div id="Info">
-            <img src="Icons/info-circle-solid.svg" alt="Icon Info" /> <a>Plus de 500 logements sont disponibles dans
+            <i class="fas fa-info-circle"></i> <a>Plus de 500 logements sont disponibles dans
                 cette ville </a>
         </div>
-
-    </header>
-
-
+    </section>
 
     <section>
-        <h1>Hébergements à Marseille</h1>
-        <div id="Hébergements">
-            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Hotel de la Cannebière" />
-            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
-            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les Mouettes" />
-            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la Mer" />
-            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier" />
-            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hôtel Chez Amina" />
+        <div id="hebergements">
+            <h1 class="title-hosting">Hébergements à Marseille</h1>
 
+            <div id="flexbox-hosting">
 
+                <div id="cannebiere">
+                    <img class="smaller-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="Hotel de la Cannebière" />
+                    <p class="text-hosting">Auberge de la Cannebière <br>
+                        Nuit à partir de 25 <i class="fas fa-euro-sign"></i></p>
+                    <div id="etoilage">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
 
+                <div id="port">
+                    <img class="smaller-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="Hôtel du port" />
+                    <p class="text-hosting"> Hôtel du Port <br>
+                        Nuit à partir de 52 <i class="fas fa-euro-sign"></i></p>
+                    <div id="etoilage">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
 
+                <div id="mouettes">
+                    <img class="smaller-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="Hôtel Les Mouettes" />
+                    <p class="text-hosting"> Hôtel Les Mouettes <br>
+                        Nuit à partir de 76 <i class="fas fa-euro-sign"></i></p>
+                    <div id="etoilage">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <div id="mer">
+                    <img class="smaller-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="Hôtel de la Mer" />
+                    <p class="text-hosting"> Hôtel de la mer <br>
+                        Nuit à partir de 46 <i class="fas fa-euro-sign"></i></p>
+                    <div id="etoilage">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
 
+                    <div id="panier">
+                        <img class="smaller-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                            alt="Auberge le Panier" />
+                        <p class="text-hosting"> Hôtel le Panier<br>
+                            Nuit à partir de 23 <i class="fas fa-euro-sign"></i></p>
+                        <div id="etoilage">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
 
-
+                        <div id="amina"></div>
+                        <img class="smaller-image"
+                            src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                            alt="hôtel Chez Amina" />
+                        <p class="text-hosting"> Hôtel le Panier<br>
+                            Nuit à partir de 96 <i class="fas fa-euro-sign"></i></p>
+                        <div id="etoilage">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p>Afficher plus</p>
+                </div>
     </section>
+
+
+</body>
+
+</html>
