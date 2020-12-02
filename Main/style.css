@@ -1,0 +1,250 @@
+/* Définition de la police Raleway */
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('Ralewayfont/Raleway-Italic-VariableFont_wght.ttf');
+    src: url('Ralewayfont/Raleway-VariableFont_wght.ttf');
+    src: url('Ralewayfont/static/Raleway-Black.ttf');
+    src: url('Ralewayfont/static/Raleway-BlackItalic.ttf');
+    src: url('Ralewayfont/static/Raleway-Medium.ttf');
+    src: url('Ralewayfont/static/Raleway-Regular.ttf');
+    src: url('Ralewayfont/static/Raleway-Thin.ttf');
+    src: url('Ralewayfont/static/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body {
+    font-family: Raleway-Regular, Serif;
+    
+}
+
+/* HEADER */
+
+header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-content: flex-start;   
+}
+
+/* Menu */
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 10px;
+}
+
+nav a
+{
+    font-size: 0.8em;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #A2A2A2 ;
+}
+
+/* Slogan */
+#title {
+    display: flex;
+    flex-direction: column;
+    }
+    
+h2 {
+        font-family: 'Raleway-Bold', serif;
+        font-size: 0.8em;
+        font-weight: normal;
+        margin-bottom: 1px;
+        margin-left: 5px; 
+    }
+
+h3 {
+        font-family: 'Raleway-Thin', serif;
+        font-size: 0.5em;
+        font-weight: normal;
+        margin-top: 1px;
+        margin-left: 5px; 
+    }
+
+    /* Recherche */
+
+    .research {
+        width: 200px;
+        height: 32px;
+        margin-top: 10px;
+        margin-left: 5px;
+        display: flex;
+        background:#F2F2F2;
+        border-radius: 8px;   
+    }
+
+    .map {
+        width: 12px;
+        height: 17px;
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+    }
+
+    .search {
+        width: 200px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        background:white;
+        border: transparent;
+        padding: 3px;
+        font-size: 10px;
+       
+    }
+
+    .button {
+        width: 200px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        background: #0065FC;
+        border: #0065FC; 
+        border-radius: 0px 8px 8px 0px;
+        font-size: 10px;
+        color: white;
+    }
+    
+/* Filtres */
+
+.filtres {
+    display: flex;
+    margin: 10px;
+    margin-top: 20px;
+    list-style-type: none; 
+}
+
+.titlefiltres {
+    font-size: 12px;
+}
+
+.filters {
+display: flex;
+}
+
+.fas {
+   background:#DEEBFF;
+   justify-content: center;
+   color: blue;
+   border: 2px;
+   border-color:#DEEBFF;
+   border-style: solid;
+   border-radius: 50%;
+   padding: 3px;
+}
+
+.searchfi {
+    background:white;
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 8px;
+    text-align: start;
+    font-size: 10px;
+}
+
+/* 6 Informations*/
+
+#Info img
+{
+    width: 30px;
+    height: 15px; 
+}
+ 
+#Info
+{
+    font-family: 'Raleway-Thin';
+    font-size: 0.5em;
+}
+
+/* SECTION HEBERGEMENTS */
+
+#hebergements {
+    width: 600px;
+    height: 500px;
+    background-color: #F2F2F2;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#flexbox-hosting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.title-hosting {
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    display: inline;
+}
+
+#cannebiere, #port, #mouettes, #mer, #panier, #amina {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 3px;
+    border-style: solid;  
+}
+
+.smaller-image {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    align-content: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.text-hosting {
+    font-size: 8px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.fa-star.fas {
+    font-size: 10px;
+    color: blue;
+    margin-top: 2px;
+
+}
+
+.empty.fas {
+    color: grey;
+    margin-top: 2px;
+}
+
+/* ASIDE LES PLUS POPULAIRES*/
+
+/* SECTION ACTIVITES */
+
+/* FOOTER*/
+
+
+/* */
+    
+
+
+
+
