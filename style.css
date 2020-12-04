@@ -147,9 +147,9 @@ h4 {
         border-radius: 50%;
         z-index: 1;
     }
-    
-    .fas fa-money-bill-wave {
-        display: block;
+
+    .fa-money-bill-wave:before {
+        content: "";
         margin: auto;
     }
     
@@ -162,9 +162,11 @@ h4 {
         border: 1px;
         border-style: solid;
         border-color: rgb(189, 184, 184);
+        border-left: none;
         border-radius: 8px;
         position: absolute;
         content: "Economique";
+        font-family: Raleway-Regular ;
         padding-left: 10px;
         z-index: 2;
     }
@@ -206,7 +208,7 @@ h4 {
 
 /* SECTION HEBERGEMENTS */
 
-#hebergements {
+.hebergements {
     width: 600px;
     height: 500px;
     background-color: #F2F2F2;
@@ -217,17 +219,21 @@ h4 {
 #flexbox-hosting {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;   
+    justify-content: space-between;
+    width: 50%;
+    float: left;
+    background-color: rgb(182, 177, 177);     
 }
 
 .title-hosting {
     width: auto;
     padding: 10px;
     font-size: 15px;
-    display: inline;
+    display: flex ;
+    flex-direction: column ;
 }
 
-#cannebiere, #port, #mouettes, #mer, #panier, #amina {
+#hosting, #port, #mouettes, #mer, #panier, #amina {
     width: 160px;
     height: 160px;
     background-color: white;
@@ -266,13 +272,28 @@ h4 {
 
 /* ASIDE LES PLUS POPULAIRES*/
 
+aside {
+    width: 30%;
+    float: right;
+    background-color: rgb(182, 177, 177);
+}
+
+
+
 /* SECTION ACTIVITES */
+
+article {
+    clear: both;
+    width: 100%;
+}
 
 /* FOOTER*/
 
 
+
+
 /* */
-    
+/
 
 
 

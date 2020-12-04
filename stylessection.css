@@ -1,0 +1,88 @@
+* SECTION HEBERGEMENTS */
+
+.hebergements {
+    width: 50%;
+    height: 800px;
+    background-color: #F2F2F2;
+    margin: 10px;
+    border-radius: 10px 10px 10px 10px;
+} 
+
+#flexbox-hosting {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 3px solid black; 
+    width: 50%;
+    float: left;
+    background-color: rgb(182, 177, 177);  
+}
+
+.title-hosting {
+    width: auto;
+    padding: 10px;
+    font-size: 15px;
+    display: flex ;
+    flex-direction: column ;
+}
+
+#hosting, #port, #mouettes, #mer, #panier, #amina {
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-color: white;
+    border-radius: 10px 10px 10px 10px;
+    border-width: 3px;
+    border-style: solid;  
+}
+
+.smaller-image {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    align-content: center;
+    padding: 5px 5px 5px 5px;
+}
+
+.text-hosting {
+    font-size: 8px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.fa-star.fas {
+    font-size: 10px;
+    color: blue;
+    margin-top: 2px;
+
+}
+
+.empty.fas {
+    color: grey;
+    margin-top: 2px;
+}
+
+/* ASIDE LES PLUS POPULAIRES*/
+
+aside {
+    width: 30%;
+    float: right;
+    background-color: rgb(182, 177, 177);
+}
+
+
+
+/* SECTION ACTIVITES */
+
+article {
+    clear: both;
+    width: 100%;
+}
+
+/* FOOTER*/
+
+
+
+
+/* */
