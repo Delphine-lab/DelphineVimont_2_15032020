@@ -38,3 +38,55 @@ font-size: 10px;
     padding-left: 10px;
     z-index: 2;
 }
+
+/*.fa-money-bill-wave:before {
+        content: "";
+        margin: auto;
+    }
+    
+    .economique ::after {
+        width: 100px;
+        height: 23px;
+        top: 0px;
+        left: 12px;
+        background-color:transparent;
+        border: 1px;
+        border-style: solid;
+        border-color: rgb(189, 184, 184);
+        border-left: none;
+        border-radius: 8px;
+        position: absolute;
+        content: "Economique";
+        font-family: Raleway-Regular ;
+        padding-left: 10px;
+        z-index: 2;
+    }*/
+
+/*.fas {
+   background:#DEEBFF;
+   justify-content: center;
+   color: blue;
+   border: 2px;
+   border-color:#DEEBFF;
+   border-style: solid;
+   border-radius: 50%;
+   padding: 3px;
+}
+
+.searchfi {
+    background:white;
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 8px;
+    text-align: start;
+    font-size: 10px;
+} */
+
+HOSTING 
+display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    float: left;
+    background-color: rgb(182, 177, 177);   
