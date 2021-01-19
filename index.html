@@ -15,8 +15,7 @@
 
 <body>
 
-
-    <!-- LOGO AND NAVIGATION -->
+    <!-- HEADER-->
     <header class="logonav">
         <img class="logo" src="Smallpictures/logo/Reservia.svg" alt="Logo de Reservia" />
         <nav class="nav">
@@ -31,43 +30,46 @@
 
         <!-- BUTTON SEARCH -->
         <section class="search">
-            <div class="slogan">
+            <header class="slogan">
                 <h2 class="slogantitle">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <h3 class="slogansubtitle">En plein centre ville ou en pleine nature</h3>
-            </div>
+            </header>
 
             <form class="research" action="https://reservia.com/destinations">
                 <i class="fas fa-map-marker-alt mapicon"></i>
                 <input class="searchform" type="text" placeholder="#" value="Marseille, France">
                 <button class="button" type="submit"> Rechercher</button>
             </form>
-            </div>
 
             <!-- FILTERS -->
             <div class="filters">
-                <h2 class="titlefilters">Filtres</h4>
-                    <div class="fourfilters">
-                        <div class="economique">
-                            <i class="fas fa-money-bill-wave filtersicon"></i>
-                            <p class="eco">Economique</p>
-                        </div>
-
-                        <div class="familial">
-                            <i class="fas fa-child filtersicon"></i>
-                            <p class="fami">Familial</p>
-                        </div>
-
-                        <div class="romantique">
-                            <i class="fas fa-heart filtersicon"></i>
-                            <p class="roman">Romantique</p>
-                        </div>
-
-                        <div class="animaux">
-                            <i class="fas fa-dog filtersicon"></i>
-                            <p class="anim">Animaux autorisés</p>
-                        </div>
+                <h2 class="titlefilters">Filtres</h2>
+                <div class="eachfilter">
+                    <div class="iconfilter">
+                        <i class="fas fa-money-bill-wave filtersicon"></i>
                     </div>
+                    <span class="namefilter">Economique</span>
+                </div>
+                <div class="eachfilter">
+                    <div class="iconfilter">
+                        <i class="fas fa-child filtersicon"></i>
+                    </div>
+                    <span class="namefilter">Familial</span>
+                </div>
+                <div class="eachfilter">
+                    <div class="iconfilter">
+                        <i class="fas fa-heart filtersicon"></i>
+                    </div>
+                    <span class="namefilter">Romantique</span>
+                </div>
+                <div class="eachfilter">
+                    <div class="iconfilter">
+                        <i class="fas fa-dog filtersicon"></i>
+                    </div>
+                    <span class="namefilter">Animaux autorisés</span>
+                </div>
             </div>
+
             <div class="infos">
                 <div class="containerinfoicon">
                     <i class="fas fa-info infoicon"></i>
@@ -75,8 +77,11 @@
                 <p class="infostext">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
-        <section class="hosting">
-            <div class="hotels">
+
+        <!-- SECTION HOSTING -->
+
+        <section class="containermainhosting">
+            <div class="hostingleft">
                 <header class="hostingmaintitle">
                     <h2 class="title-hosting">Hébergements à Marseille</h2>
                 </header>
@@ -85,9 +90,9 @@
                     <a href="#">
                         <figure class="containerhostingimg">
                             <img class="hostingsmallerimg"
-                                src="Smallpictures/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                src="Smallpictures/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                                 alt="Hotel de la Cannebière">
-                            <figcaption class="containerhostingtext">
+                            <figcaption class="containerhostingtitle">
                                 <h3 class="hostingtitle">Auberge la Cannebière</h3>
                             </figcaption>
                         </figure>
@@ -218,53 +223,74 @@
 
             <!-- ASIDE LES PLUS POPULAIRES*/ -->
 
-            <aside class="popular">
+            <aside class="popularright">
                 <h2 class="populartitle">Les plus populaire<i class="fas fa-chart-line"></i></h2>
 
-                <div class="soleil">
-                    <img class="popular-smaller-image"
-                        src="Smallpictures/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-                        alt="Hôtel Le soleil du matin" />
-                    <h3 class="name-popular">Hôtel Le soleil du matin</h3>
-                    <p class="popular-pricing">Nuit à partir de 128€</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
+                <article class="containerhosting containerpopular">
+                    <a class="containerpopularcontenu" href="#">
+                        <div class="containerpopularimage">
+                            <img class="popularsmallerimage"
+                                src="Smallpictures/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                alt="Hôtel Le soleil du matin" />
+                        </div>
+                        <div class="containerpopulartext">
+                            <h3 class="popularhostingtitle">Hôtel Le soleil du matin</h3>
+                            <p class="popularpricing">Nuit à partir de 128€</p>
+                            <div class="popularcontentwhitespace"></div>
+                            <div class="stars">
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
 
-                <div class="eau">
-                    <img class="popular-smaller-image"
-                        src="Smallpictures/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
-                        alt="Au coeur de l'eau Chambres d'hôtes" />
-                    <h3 class="name-popular"> Au coeur de l'eau Chambres d'hôtes</h3>
-                    <p class="popular-pricing"> Nuit à partir de 71€</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star empty"></i>
-                    </div>
-                </div>
+                <article class="containerhosting containerpopular">
+                    <a class="containerpopularcontenu" href="#">
+                        <div class="containerpopularimage">
+                            <img class="popularsmallerimage"
+                                src="Smallpictures/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                                alt="Au coeur de l'eau Chambres d'hôtes" />
+                        </div>
+                        <div class="containerpopulartext">
+                            <h3 class="popularhostingtitle"> Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p class="popularpricing"> Nuit à partir de 71€</p>
+                            <div class="popularcontentwhitespace"></div>
+                            <div class="stars">
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
 
-                <div class="bleu">
-                    <img class="popular-smaller-image"
-                        src="Smallpictures/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-                        alt="Hôtel Tout bleu et Blanc" />
-                    <h3 class="name-popular">Hôtel Tout bleu et Blanc</h3>
-                    <p class="popular-pricing"> Nuit à partir de 68€</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star empty"></i>
-                    </div>
-                </div>
+                <article class="containerhosting containerpopular">
+                    <a class="containerpopularcontenu" href="#">
+                        <div class="containerpopularimage">
+                            <img class="popularsmallerimage"
+                                src="Smallpictures/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                                alt="Hôtel Tout bleu et Blanc" />
+                        </div>
+                        <div class="containerpopulartext">
+                            <h3 class="popularhostingtitle">Hôtel Tout bleu et Blanc</h3>
+                            <p class="popularpricing"> Nuit à partir de 68€</p>
+                            <div class="popularcontentwhitespace"></div>
+                            <div class="stars">
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                                <i class="fas fa-star starsicon" data-active="true"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </aside>
         </section>
 
@@ -313,9 +339,8 @@
             </div>
         </section>
     </main>
-    <!-- MAIN -->
 
-    <!-- FOOTER-->
+    <!-- FOOTER -->
     <footer class="footerlinks">
 
         <div class="links-datareservia">
