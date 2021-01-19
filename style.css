@@ -147,7 +147,7 @@ a {
     margin-right: 0;
   }
 
-.eachfilter:hover {
+  .eachfilter:hover {
   background-color: #f3f8ff;
   transform: scale(1.015);
 }
@@ -319,19 +319,30 @@ color: blue;
 /* SECTION ACTIVITES*/
 
 .activities {
-    display: flex;
+  display: grid;
+  column-gap: 2rem;
+  margin: 4rem 0;
   }
 
 .activitiestitle {
-    font-weight: bold;
+  grid-column: 1/-1;
   }
-
-.vieuxport {
+  .activitycontent {
+    box-shadow: 0 0 20px #0000002e;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.1s;
+  }
+  .activitycontent:hover {
+    transform: scale(1.01);
+  }
+  .activityimg {
     position: relative;
     flex: 1;
   }
-
-.activities-smaller-image {
+  .activities-smaller-image {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -341,29 +352,33 @@ color: blue;
     margin: 1.2rem 1.5rem;
   }
 
-
 /* FOOTER*/
 
 .footerlinks {
-    background-color: #F2F2F2;
-    width: 100%;
-  }
-  .footerColumnwrapper {
-    display: flex;
-    max-width: 100%;
-    width: 1440px;
-    margin: auto;
-    padding: 10px;
-  }
+  background-color: #F2F2F2;
+  width: 100%;
+}
 
-  .footertitle {
-    width: 30%;
-    padding: 10px;
-  }
+.footercolumnlayout{
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
 
-  .links-footer {
-    display: block;
-    margin: 5px;
-  }
+.links-datareservia {
+  width: 30%;
+  padding: 2rem 2rem;
+}
+
+.footereachlink {
+  display: block;
+  margin: 1rem 0;
+}
+.footereachlink:hover {
+  text-decoration: underline;
+}
   
 
