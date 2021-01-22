@@ -13,26 +13,23 @@ a {
 /* HEADER */
 
 .logonav {
-   display: flex;
-   justify-content: space-between;
-   margin: auto;
+  display: grid;
   align-items: center;
   max-width: 1440px;
-   
+  margin: auto;  
 }
 
 .logo {
-    width: 100px;
-    height: 70px;
-    display: flex;
-    align-content: flex-start;   
+  grid-area: logo;
+  padding: 0 2rem;
+  height: 2.813rem;   
 }
 
 /* navigation */
 .nav {
   display: flex;
   align-items: center;
-  display:flex;
+  grid-area: navbar;
 }
 .nav-name {
   padding: 2px;
@@ -52,10 +49,54 @@ a {
 .nav-subscription {
   display: flex;
   align-items: center;
-  padding: 2px;
+  grid-area: button;
+  padding: 2rem;
   color: #0065FC;
-  font-weight: 500;
+  font-weight: 600;
 }
+
+/* Medias querries Header and Navigation */
+
+@media screen and (min-width: 601px) {
+  .logonav {
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo . navbar button";
+  }
+  .nav-name[data-active=true] {
+    border-top: 3px solid #0065FC;
+  }
+  .nav-name:hover {
+    border-top: 3px solid #0065FC;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logonav {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo . button" "navbar navbar navbar";
+  }
+  .logo {
+    order: 0;
+  }
+  .nav-subscription  {
+    order: 1;
+  }
+  .nav {
+    order: 2;
+  }
+  .nav-name {
+    border-top: none;
+    border-bottom: 3px solid #F2F2F2;
+    width: 50%;
+  }
+  .nav-name[data-active=true] {
+    border-bottom-color: #0065FC;
+  }
+  .nav-name:hover {
+    border-bottom-color: #0065FC;
+  }
+}
+
+
 
 /* SLOGAN AND BUTTON SEARCH */
 
