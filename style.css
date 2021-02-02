@@ -237,6 +237,42 @@ color: blue;
     margin: 0;
   }
 
+/* Medias Querries Search Filters Infos */
+
+@media screen and (max-width: 600px) {
+  .research {
+    display: flex;
+    width: 100%;
+  }
+  .searchform {
+    flex: 1;
+  }
+  .searchformtext {
+    display: none;
+  }
+  .searchformicon {
+    display: block;
+  }
+}
+@media screen and (max-width: 650px) {
+  .titlefilters {
+    width: 100%;
+  }
+  .eachfilter {
+    margin-right: 1rem;
+  }
+}
+@media screen and (min-width: 601px) {
+  .searchformtext {
+    display: block;
+  }
+  .searchformicon {
+    display: none !important;
+  }
+}
+
+
+
 /* SECTION HEBERGEMENTS */
 
 .hosting, .popular {
