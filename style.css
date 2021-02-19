@@ -120,7 +120,7 @@ a {
 /* Recherche */
 
     .research {
-        width: 480px;
+        width: 430px;
         height: 50px;
         margin-top: 40px;
         margin-left: 5px;
@@ -347,6 +347,10 @@ color: blue;
 .hostingpricing, .popularpricing {
   font-weight: 100;
   margin: 13px 2px 20px 9px;
+}
+
+.pricebold{
+  font-weight: bold;
 }
 
 .stars {
