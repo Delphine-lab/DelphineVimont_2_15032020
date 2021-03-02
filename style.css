@@ -347,7 +347,7 @@ color: blue;
 .hostingleft, .popularright {
   background-color: #F2F2F2;
   border-radius: 1.5rem;
-  padding: 1rem;
+  padding: 0.9rem;
 }
 
 .containermainhosting {
