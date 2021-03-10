@@ -2,7 +2,7 @@
 
 body {
   font-family: "Raleway", "Sans serif";
-  margin: 10px;
+  margin: 0px;
 }
 
 a {
@@ -16,14 +16,13 @@ a {
   display: grid;
   align-items: center;
   max-width: 1440px;
-  margin: auto;  
+  margin: auto;
+  padding: 15px; 
 }
 
 .logo {
   grid-area: logo;
-  padding: 0 2rem;
   height: 2.813rem;
-  /*width: 100px;*/  
 }
 
 /* navigation */
@@ -80,6 +79,8 @@ a {
   .logonav {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
+    row-gap: 20px;
+    padding: 10px;
   }
   .logo {
     order: 0;
@@ -94,6 +95,8 @@ a {
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
+    padding: 20px 10px;
+    margin: -10px;
   }
   .nav-name[data-active=true] {
     border-bottom-color: #0065FC;
@@ -117,6 +120,10 @@ a {
 
 /* Slogan */
 
+.search {
+  padding: 15px;
+}
+
 .slogantitle {
   margin-bottom: 3px; 
   font-size: 22px;
@@ -131,7 +138,7 @@ a {
 /* Recherche */
 
     .research {
-        display: inline-flex;
+      display: inline-flex;
       max-width: 100%;
       overflow: auto;
     }
@@ -234,7 +241,7 @@ background-color: #DEEBFF;
 color: blue;
 }
 .namefilter {
-  margin: 0 22px;
+  margin: 0 10px;
 }
 
   /* 6 Informations*/
@@ -268,9 +275,18 @@ color: blue;
 /* Medias Querries Search Filters Infos */
 
 @media screen and (max-width: 600px) {
+
+  .search {
+    padding: 5px;
+  }
+
   .research {
     display: flex;
     width: 100%;
+  }
+
+  .researchicon {
+    width: 70%;
   }
   .searchform {
     flex: 1;
@@ -313,6 +329,7 @@ color: blue;
   display: grid;
   column-gap: 2rem;
   grid-template-columns: 6fr 3fr;
+  padding: 15px;
 }
 .hostingleft {
   display: grid;
@@ -328,7 +345,7 @@ color: blue;
 
 .containerhosting {
   background-color: white;
-  padding: 0.375rem;
+  padding: 15px;
   border-radius: 1.25rem;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
@@ -462,7 +479,7 @@ color: blue;
   }
 
   .hostingleft, .popularright {
-  margin: -10px; !important
+  margin: -10px; 
   }
 }
 @media (max-width: 1000px) {
@@ -478,6 +495,7 @@ color: blue;
   display: grid;
   column-gap: 2rem;
   margin: 4rem 0;
+  padding: 15px;
   }
 
 .activitiestitle {
@@ -560,7 +578,7 @@ color: blue;
       row-gap: 2rem;
       grid-template-columns: 1fr;
       grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
-      margin: 10px -10px; !important
+      margin: 10px -10px; 
     }
   }
 
@@ -598,7 +616,7 @@ color: blue;
 @media (max-width: 750px) {
 
   .footerlinks {
-    margin: 10px -10px; !important
+    margin: 10px -10px; 
   }
   
   .footercolumnlayout {
