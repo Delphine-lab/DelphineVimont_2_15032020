@@ -17,11 +17,11 @@ a {
   align-items: center;
   max-width: 1440px;
   margin: auto;
-  padding: 15px; 
 }
 
 .logo {
   grid-area: logo;
+  padding: 0 2rem;
   height: 2.813rem;
 }
 
@@ -30,10 +30,9 @@ a {
   display: flex;
   align-items: center;
   grid-area: navbar;
-  /*width: 470px;*/
 }
 .nav-name {
-  padding: 30px;
+  padding: 2rem;
   font-weight: 500;
   text-align: center;
   transition-duration: 0.1s;
@@ -80,10 +79,11 @@ a {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . button" "navbar navbar navbar";
     row-gap: 20px;
-    padding: 10px;
+    padding: 12px;
   }
   .logo {
     order: 0;
+    padding: 0px;
   }
   .subscription  {
     order: 1;
@@ -95,8 +95,8 @@ a {
     border-top: none;
     border-bottom: 3px solid #F2F2F2;
     width: 50%;
-    padding: 20px 10px;
-    margin: -10px;
+    padding: 15px 12px;
+    margin: -12px;
   }
   .nav-name[data-active=true] {
     border-bottom-color: #0065FC;
@@ -208,7 +208,7 @@ a {
   margin-right: 30px;
   border: 2px solid #d9d9d9;
   border-radius: 30px;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
   cursor: pointer;
   transition-duration: 0.1s;
   font-weight: bold;
@@ -275,18 +275,26 @@ color: blue;
 /* Medias Querries Search Filters Infos */
 
 @media screen and (max-width: 600px) {
-
   .search {
-    padding: 5px;
+    padding: 12px;
   }
 
+  .slogantitle {
+    font-size: 20px;
+  }
+
+  .slogansubtitle {
+    padding: 8px 0px;
+    font-size: 14px;
+  }
   .research {
     display: flex;
     width: 100%;
+
   }
 
   .researchicon {
-    width: 70%;
+    padding: 12px;
   }
   .searchform {
     flex: 1;
@@ -294,6 +302,12 @@ color: blue;
   .searchformtext {
     display: none;
   }
+
+  .searchbutton {
+      padding: 0px 13px;
+      border-radius: 1rem 1rem 1rem 1rem;
+  }
+
   .searchformicon {
     display: block;
   }
@@ -338,6 +352,7 @@ color: blue;
 }
 .hostingmaintitle {
   grid-column: 1/-1;
+  margin: 12px 0px 0px 12px;
 }
 .title-hosting {
   margin: 0;
@@ -345,7 +360,7 @@ color: blue;
 
 .containerhosting {
   background-color: white;
-  padding: 15px;
+  padding: 5px;
   border-radius: 1.25rem;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
@@ -409,9 +424,9 @@ color: blue;
   grid-template-rows: auto repeat(3, 1fr);
 }
 .populartitle {
-  margin: 0;
   display: flex;
   justify-content: space-between;
+  margin: 12px 0px 0px 12px;
 }
 .containerpopularcontenu {
   display: flex;
@@ -476,10 +491,13 @@ color: blue;
 @media (max-width: 650px) {
   .hostingleft {
     grid-template-columns: 1fr;
+    background-color: white;
   }
 
   .hostingleft, .popularright {
-  margin: -10px; 
+    margin: 0px -15px;
+    padding: 15px;
+    border-radius: 0; 
   }
 }
 @media (max-width: 1000px) {
@@ -494,8 +512,7 @@ color: blue;
 .activities {
   display: grid;
   column-gap: 2rem;
-  margin: 4rem 0;
-  padding: 15px;
+  margin: 4rem 20px;
   }
 
 .activitiestitle {
@@ -578,7 +595,7 @@ color: blue;
       row-gap: 2rem;
       grid-template-columns: 1fr;
       grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
-      margin: 10px -10px; 
+      margin: 10px 15px; 
     }
   }
 
@@ -616,7 +633,7 @@ color: blue;
 @media (max-width: 750px) {
 
   .footerlinks {
-    margin: 10px -10px; 
+    margin: 10px 0px; 
   }
   
   .footercolumnlayout {
