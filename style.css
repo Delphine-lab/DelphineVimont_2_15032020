@@ -306,6 +306,8 @@ color: blue;
   .searchbutton {
       padding: 0px 13px;
       border-radius: 1rem 1rem 1rem 1rem;
+      position: relative;
+      right: 30px;
   }
 
   .searchformicon {
@@ -633,7 +635,7 @@ color: blue;
 @media (max-width: 750px) {
 
   .footerlinks {
-    margin: 10px 0px; 
+    margin: 0px 0px; 
   }
   
   .footercolumnlayout {
